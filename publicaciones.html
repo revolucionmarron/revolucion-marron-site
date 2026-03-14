@@ -1,0 +1,95 @@
+---
+layout: default
+title: Publicaciones
+description: "Análisis técnicos, papers traducidos y casos documentados"
+---
+
+<div style="max-width:1100px;margin:80px auto;padding:0 20px;">
+
+  <header style="text-align:center;margin-bottom:60px;">
+    <h1 style="font-size:48px;margin-bottom:20px;color:#2d201c;">Publicaciones</h1>
+    <p style="font-size:20px;color:#555;max-width:760px;margin:0 auto;">
+      Papers científicos traducidos, análisis técnicos y casos documentados con datos reales.
+    </p>
+  </header>
+
+  {% if site.posts.size > 0 %}
+  
+    <!-- Filtros por categoría (futuro) -->
+    <div style="margin-bottom:40px;text-align:center;">
+      <p style="color:#999;font-size:14px;">
+        {{ site.posts.size }} {% if site.posts.size == 1 %}publicación{% else %}publicaciones{% endif %}
+      </p>
+    </div>
+
+    <!-- Lista de publicaciones -->
+    <div style="display:grid;gap:40px;">
+      {% for post in site.posts %}
+        <article class="card" style="display:grid;gap:20px;">
+          
+          {% if post.categories %}
+            <div class="post-category">{{ post.categories | first }}</div>
+          {% endif %}
+          
+          <h2 style="margin:0;">
+            <a href="{{ post.url | relative_url }}" style="color:var(--soil);text-decoration:none;font-size:28px;">
+              {{ post.title }}
+            </a>
+          </h2>
+          
+          <p style="color:#666;font-size:17px;line-height:1.6;margin:0;">
+            {{ post.excerpt | strip_html | truncatewords: 40 }}
+          </p>
+          
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+            <div class="post-meta">
+              <span>{{ post.date | date: "%-d %B %Y" }}</span>
+              {% if post.reading_time %}
+                <span> • {{ post.reading_time }} min lectura</span>
+              {% endif %}
+            </div>
+            
+            <a href="{{ post.url | relative_url }}" style="color:var(--soil);text-decoration:none;font-weight:600;font-size:15px;">
+              Leer más →
+            </a>
+          </div>
+          
+        </article>
+      {% endfor %}
+    </div>
+
+  {% else %}
+  
+    <!-- Estado vacío -->
+    <div style="background:var(--sand);padding:80px 40px;border-radius:16px;text-align:center;">
+      <h2 style="color:var(--soil);margin-bottom:16px;font-size:28px;">Próximamente</h2>
+      <p style="color:#666;font-size:18px;line-height:1.6;max-width:600px;margin:0 auto 30px;">
+        Las publicaciones técnicas estarán disponibles en las próximas semanas.<br>
+        Contenido sobre arquitectura productiva, papers traducidos y casos documentados.
+      </p>
+      <a href="mailto:jaime@revolucionmarron.cl">
+        <button>Notifícame cuando publiques</button>
+      </a>
+    </div>
+
+  {% endif %}
+
+</div>
+```
+
+4. Commit: `Crear página de publicaciones`
+
+---
+
+## 🎯 **PASO 8: CREAR PRIMER ARTÍCULO DE PRUEBA**
+
+Ahora publiquemos un artículo de prueba para verificar que todo funciona.
+
+### **8.1 - Crear artículo en `_posts/`**
+
+1. Navega a la carpeta `_posts/`
+2. **Add file** → **Create new file**
+
+3. **IMPORTANTE - Nombre del archivo** (formato obligatorio):
+```
+2026-03-15-bienvenida-revolucion-marron.md
