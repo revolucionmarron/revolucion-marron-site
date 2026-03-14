@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Inicio
+description: "Think Tank en Arquitectura Productiva Regenerativa"
 ---
 
 <section class="hero">
@@ -19,56 +20,54 @@ Revolución Marrón es un espacio de pensamiento técnico y diseño predial dedi
 
 </section>
 
-<!-- NUEVA SECCIÓN: Últimas Publicaciones -->
+<!-- Sección: Últimas Publicaciones -->
 <section class="section" style="background:white;">
 
 <h2>Publicaciones Recientes</h2>
 
-<p style="max-width:800px;margin:0 auto 40px;">
+<p style="max-width:800px;margin:0 auto 40px;color:#555;">
 Análisis técnicos, traducción de papers científicos y casos documentados con datos reales.
 </p>
 
 {% if site.posts.size > 0 %}
-<div class="cards">
-  {% for post in site.posts limit:3 %}
-    <div class="card">
-      {% if post.categories %}
-        <div style="color:var(--soil);font-size:13px;font-weight:600;text-transform:uppercase;margin-bottom:8px;">
-          {{ post.categories | first }}
+  <div class="cards">
+    {% for post in site.posts limit:3 %}
+      <div class="card">
+        {% if post.categories %}
+          <div class="post-category">{{ post.categories | first }}</div>
+        {% endif %}
+        
+        <h3>
+          <a href="{{ post.url | relative_url }}" style="color:var(--soil);text-decoration:none;">
+            {{ post.title }}
+          </a>
+        </h3>
+        
+        <p style="color:#666;font-size:15px;">
+          {{ post.excerpt | strip_html | truncatewords: 25 }}
+        </p>
+        
+        <div style="color:#999;font-size:14px;margin-top:12px;">
+          {{ post.date | date: "%d %B %Y" }}
         </div>
-      {% endif %}
-      
-      <h3>
-        <a href="{{ post.url | relative_url }}" style="color:var(--soil);text-decoration:none;">
-          {{ post.title }}
-        </a>
-      </h3>
-      
-      <p style="color:#666;font-size:15px;">
-        {{ post.excerpt | strip_html | truncatewords: 25 }}
-      </p>
-      
-      <div style="color:#999;font-size:14px;margin-top:12px;">
-        {{ post.date | date: "%d %B %Y" }}
       </div>
-    </div>
-  {% endfor %}
-</div>
+    {% endfor %}
+  </div>
 
-<div style="text-align:center;margin-top:40px;">
-  <a href="{{ '/publicaciones' | relative_url }}">
-    <button>Ver todas las publicaciones</button>
-  </a>
-</div>
+  <div style="text-align:center;margin-top:40px;">
+    <a href="{{ '/publicaciones' | relative_url }}">
+      <button>Ver todas las publicaciones</button>
+    </a>
+  </div>
 
 {% else %}
 
-<div style="background:var(--sand);padding:40px;border-radius:12px;text-align:center;">
-  <p style="color:#666;">
-    Las publicaciones técnicas estarán disponibles próximamente.<br>
-    Síguenos para recibir notificaciones.
-  </p>
-</div>
+  <div style="background:var(--sand);padding:40px;border-radius:12px;text-align:center;">
+    <p style="color:#666;">
+      Las publicaciones técnicas estarán disponibles próximamente.<br>
+      Suscríbete para recibir notificaciones.
+    </p>
+  </div>
 
 {% endif %}
 
@@ -148,15 +147,3 @@ Ingeniero Agrónomo con especialización en Ciencias Animales y Magíster en Eco
 </p>
 
 </section>
-```
-
-4. Commit: `Actualizar homepage con sistema de publicaciones`
-5. **"Commit changes"**
-
----
-
-## ⏰ **CHECKPOINT 1: VERIFICAR QUE FUNCIONA**
-
-Espera 2-3 minutos y visita:
-```
-https://revolucionmarron.cl/
