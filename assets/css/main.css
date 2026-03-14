@@ -1,24 +1,378 @@
-:root{
---soil:#4b2e2a;
---clay:#7b5b3d;
---sand:#f5efe8;
---text:#2f2f2f;
+/* Revolución Marrón - Estilos principales */
+
+:root {
+  --soil: #4b2e2a;
+  --clay: #7b5b3d;
+  --sand: #f5efe8;
+  --text: #2f2f2f;
 }
 
-body{
-margin:0;
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-background:var(--sand);
-color:var(--text);
-line-height:1.6;
+* {
+  box-sizing: border-box;
 }
 
-/* ... TODO tu CSS actual ... */
-
-footer{
-padding:60px 20px;
-text-align:center;
-background:#efe5db;
-border-top:1px solid #e0d5ca;
-font-size:14px;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--sand);
+  color: var(--text);
+  line-height: 1.6;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  border-bottom: 1px solid #e5d9cd;
+  background: white;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--soil);
+  letter-spacing: 0.02em;
+}
+
+.logo a {
+  color: var(--soil);
+  text-decoration: none;
+}
+
+nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #555;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--soil);
+}
+
+.hero {
+  max-width: 1000px;
+  margin: auto;
+  padding: 120px 20px 100px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 56px;
+  line-height: 1.15;
+  margin-bottom: 30px;
+  color: #2d201c;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 760px;
+  margin: auto;
+  color: #555;
+  line-height: 1.6;
+}
+
+.cta {
+  margin-top: 40px;
+}
+
+button {
+  background: var(--soil);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  font-size: 16px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #3d2217;
+}
+
+a button {
+  display: inline-block;
+}
+
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #2d201c;
+  font-weight: 600;
+}
+
+.section p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #e8ded3;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(75, 46, 42, 0.1);
+  transform: translateY(-2px);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--soil);
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.principles {
+  background: var(--soil);
+  color: white;
+}
+
+.principles h2 {
+  color: white;
+}
+
+.principles p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.principle {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 24px;
+  border-radius: 14px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+footer {
+  padding: 60px 20px;
+  text-align: center;
+  background: #efe5db;
+  border-top: 1px solid #e0d5ca;
+  font-size: 14px;
+  color: #555;
+}
+
+footer p {
+  margin: 8px 0;
+  line-height: 1.8;
+}
+
+footer a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--soil);
+}
+
+.post-category {
+  display: inline-block;
+  background: var(--clay);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.post-meta {
+  color: #999;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.post-content {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #2f2f2f;
+}
+
+.post-content h2 {
+  font-size: 32px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: #2d201c;
+  font-weight: 600;
+}
+
+.post-content h3 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  color: var(--soil);
+  font-weight: 600;
+}
+
+.post-content p {
+  margin-bottom: 20px;
+}
+
+.post-content ul,
+.post-content ol {
+  margin: 20px 0;
+  padding-left: 30px;
+}
+
+.post-content li {
+  margin-bottom: 8px;
+}
+
+.post-content blockquote {
+  border-left: 4px solid var(--clay);
+  background: var(--sand);
+  padding: 20px 30px;
+  margin: 30px 0;
+  font-style: italic;
+  color: #555;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 30px 0;
+}
+
+.post-content code {
+  background: var(--sand);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+.post-content pre {
+  background: var(--sand);
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+  }
+  
+  header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  nav a {
+    margin: 8px 12px;
+  }
+  
+  .section {
+    padding: 60px 20px;
+  }
+  
+  .section h2 {
+    font-size: 28px;
+  }
+  
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 80px 20px 60px;
+  }
+  
+  .hero h1 {
+    font-size: 28px;
+  }
+  
+  .hero p {
+    font-size: 16px;
+  }
+}
+```
+
+8. Scroll abajo
+9. Commit message:
+```
+Corregir CSS completo
+```
+10. Click **"Commit changes"**
+
+---
+
+## ⏰ **ESPERA 2 MINUTOS**
+
+Después del commit:
+
+1. Ve a **Actions** en tu repo
+2. Espera que el último workflow esté ✅ verde
+3. Debería decir algo como "pages build and deployment" completado
+
+---
+
+## 🎯 **VERIFICACIÓN FINAL**
+
+### **Paso 1: Verificar que el CSS está completo**
+
+Abre:
+```
+https://revolucionmarron.cl/assets/css/main.css
