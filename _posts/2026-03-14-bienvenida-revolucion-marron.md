@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bienvenida a Revolución Marrón"
-date: 2026-03-15
+date: 2026-03-14
 author: Jaime Fernández López
 categories: [anuncio]
 reading_time: 5
