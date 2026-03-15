@@ -1,30 +1,23 @@
 title: Revolución Marrón
-description: "Think Tank en Arquitectura Productiva Regenerativa"
-url: "https://revolucionmarron.cl"
+description: Think Tank en Arquitectura Productiva Regenerativa
+url: https://revolucionmarron.cl
 baseurl: ""
+markdown: kramdown
+permalink: /publicaciones/:title/
+timezone: America/Santiago
+lang: es
 
 author:
   name: Jaime Fernández López
-  bio: "Ingeniero Agrónomo, M.Sc. Economía Agraria y Ambiental"
   email: jaime@revolucionmarron.cl
-
-markdown: kramdown
-permalink: /publicaciones/:title/
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-timezone: America/Santiago
-lang: es
 ```
 
-**IMPORTANTE:** 
-- NO incluyas la sección de SEO and Social Media por ahora
-- Esto simplifica el archivo para que construya sin errores
-- Después agregamos esas líneas una por una
+**NOTA:** 
+- Eliminé las comillas en `description` y `url`
+- Eliminé la sección `plugins` (Jekyll las cargará automáticamente)
+- Eliminé `bio` del autor
+- Versión mínima que debe funcionar
 
-5. Commit message:
+5. Commit:
 ```
-   Crear _config.yml limpio y simplificado
+   Simplificar _config.yml al mínimo
