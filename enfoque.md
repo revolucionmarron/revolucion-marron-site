@@ -187,13 +187,13 @@ description: "Arquitectura Productiva: diseño integral de sistemas regenerativo
 <section style="text-align:center;margin-top:80px;">
   <h2 style="font-size:32px;margin-bottom:20px;color:#2d201c;">Próximos pasos</h2>
   <p style="font-size:18px;color:#555;margin-bottom:40px;">
-    Explora casos documentados, análisis técnicos y publicaciones cientificas
+    Explora casos documentados, análisis técnicos y papers traducidos
   </p>
   <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap;">
-    <a href="/publicaciones">
+    <a href="{{ '/publicaciones' | relative_url }}">
       <button>Ver publicaciones</button>
     </a>
-    <a href="mailto:jaime@revolucionmarron.cl">
+    <a href="CALENDLY_URL_AQUI" target="_blank" rel="noopener">
       <button style="background:transparent;color:var(--soil);border:2px solid var(--soil);">
         Agendar conversación
       </button>
@@ -202,5 +202,3 @@ description: "Arquitectura Productiva: diseño integral de sistemas regenerativo
 </section>
 
 </div>
-```
-
