@@ -47,14 +47,4 @@ social:
     - https://www.linkedin.com/in/jaime-fernandez-l
 ```
 
-4. Commit:
-```
-   # SEO y Redes Sociales
-logo: /assets/images/logo-rm-social.png
-twitter:
-  card: summary_large_image
-social:
-  name: Revolución Marrón
-  links:
-    - https://www.linkedin.com/in/jaime-fernandez-l
 ```
