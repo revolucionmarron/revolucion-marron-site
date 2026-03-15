@@ -7,19 +7,35 @@ description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-
 <style>
 /* Hero Section */
 .enfoque-hero {
-  background: linear-gradient(135deg, var(--soil) 0%, var(--soil-dark) 100%);
+  position: relative;
+  background: linear-gradient(rgba(61, 40, 23, 0.75), rgba(61, 40, 23, 0.75)),
+              url('{{ '/assets/images/enfoque-hero-cerdos-huerto.png' | relative_url }}');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: white;
-  padding: 100px 40px 80px;
+  padding: 140px 40px 100px;
   text-align: center;
   border-radius: 16px;
   margin-bottom: 80px;
   box-shadow: var(--shadow-xl);
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.enfoque-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
 }
 
 .enfoque-hero h1 {
   font-size: clamp(36px, 5vw, 56px);
   margin-bottom: 24px;
   color: white;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
 .enfoque-hero p {
@@ -27,7 +43,8 @@ description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-
   line-height: 1.8;
   max-width: 900px;
   margin: 0 auto 20px;
-  color: rgba(255,255,255,0.95);
+  color: rgba(255,255,255,0.98);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
 .enfoque-hero .highlight-question {
@@ -36,6 +53,7 @@ description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-
   color: var(--accent-green);
   margin-top: 32px;
   font-style: italic;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
 /* Secciones con fondo */
@@ -488,6 +506,12 @@ description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-
 
 /* Responsive */
 @media (max-width: 768px) {
+  .enfoque-hero {
+    background-attachment: scroll !important;
+    padding: 100px 24px 80px !important;
+    min-height: 70vh !important;
+  }
+  
   .comparison-table {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -501,31 +525,36 @@ description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-
     grid-template-columns: 1fr;
   }
   
-  .enfoque-hero {
-    padding: 60px 24px 50px;
-  }
-  
   .section-white, .section-sand, .section-dark {
     padding: 60px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .enfoque-hero {
+    padding: 80px 20px 60px !important;
+    min-height: 60vh !important;
   }
 }
 </style>
 
 <!-- Hero Section -->
 <div class="enfoque-hero">
-  <h1>Qué es Revolución Marrón</h1>
-  <p>
-    Revolución Marrón es un think tank técnico dedicado a rediseñar sistemas productivos silvoagropecuarios mediante <strong>Arquitectura Productiva Regenerativa</strong>.
-  </p>
-  <p>
-    No somos una ONG ambiental. Somos un espacio de pensamiento y acción técnica que trabaja con productores, empresas y organizaciones que entienden que <strong>la agricultura regenerativa es una estrategia de negocio superior</strong>, no una postura ideológica.
-  </p>
-  <p>
-    Fundado por Jaime Fernández López en 2024, nace de la experiencia directa en dirección de proyectos públicos y privados, gerencia de empresas agropecuarias, y producción certificada nacional e internacional.
-  </p>
-  <p class="highlight-question">
-    "¿Por qué los productores siguen usando un modelo que los empobrece?"
-  </p>
+  <div class="enfoque-hero-content">
+    <h1>Qué es Revolución Marrón</h1>
+    <p>
+      Revolución Marrón es un think tank técnico dedicado a rediseñar sistemas productivos silvoagropecuarios mediante <strong>Arquitectura Productiva Regenerativa</strong>.
+    </p>
+    <p>
+      No somos una ONG ambiental. Somos un espacio de pensamiento y acción técnica que trabaja con productores, empresas y organizaciones que entienden que <strong>la agricultura regenerativa es una estrategia de negocio superior</strong>, no una postura ideológica.
+    </p>
+    <p>
+      Fundado por Jaime Fernández López en 2024, nace de la experiencia directa en dirección de proyectos públicos (FIA, FIC), gerencia de empresas agropecuarias, y producción certificada internacional.
+    </p>
+    <p class="highlight-question">
+      "¿Por qué los productores siguen usando un modelo que los empobrece?"
+    </p>
+  </div>
 </div>
 
 <!-- Sección Por Qué Cambiar -->
