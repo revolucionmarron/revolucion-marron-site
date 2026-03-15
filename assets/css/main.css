@@ -105,7 +105,7 @@ header {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(107, 68, 35, 0.1);
-  padding: 20px 40px;
+  padding: 16px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,42 +114,30 @@ header {
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: 700;
-  font-family: var(--font-serif);
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  display: block;
+  line-height: 0;
 }
 
 .logo img {
+  height: 45px;
+  width: auto;
   display: block;
   transition: transform var(--transition-normal);
 }
 
-.logo a {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-}
-
 .logo a:hover img {
-  transform: scale(1.05);
-}
-
-.logo span {
-  color: var(--soil);
-  font-family: var(--font-serif);
-  font-size: 22px;
-  font-weight: 700;
-  transition: color var(--transition-normal);
-}
-
-.logo a:hover span {
-  color: var(--clay);
+  transform: scale(1.03);
 }
 
 nav {
   display: flex;
   gap: 32px;
+  align-items: center;
 }
 
 nav a {
@@ -484,7 +472,7 @@ blockquote cite {
   }
   
   .logo img {
-    height: 32px !important;
+    height: 36px !important;
   }
   
   .logo span {
@@ -544,7 +532,7 @@ blockquote cite {
   }
   
   .logo img {
-    height: 28px !important;
+    height: 32px !important;
   }
   
   .logo span {
