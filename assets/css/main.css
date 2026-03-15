@@ -479,3 +479,117 @@ css/* ============================================
     white-space: nowrap;
   }
 }
+
+css/* ============================================
+   COMPONENTES DESTACADOS
+   ============================================ */
+
+/* Highlight box (para datos importantes) */
+.highlight-box {
+  background: linear-gradient(135deg, var(--sand-light) 0%, var(--sand) 100%);
+  border-left: 5px solid var(--clay);
+  padding: 32px;
+  margin: 40px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(61, 40, 23, 0.06);
+}
+
+.highlight-box h3 {
+  margin-top: 0;
+  color: var(--soil);
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.highlight-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* Warning box */
+.warning-box {
+  background: #FFF8E1;
+  border-left: 5px solid #FFB300;
+  padding: 24px;
+  margin: 32px 0;
+  border-radius: 8px;
+}
+
+/* Success box */
+.success-box {
+  background: #F1F8E9;
+  border-left: 5px solid #7CB342;
+  padding: 24px;
+  margin: 32px 0;
+  border-radius: 8px;
+}
+
+/* Stats display */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.stat-item {
+  background: var(--white);
+  padding: 32px 24px;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid var(--border-light);
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  border-color: var(--clay);
+  box-shadow: 0 4px 16px rgba(201, 123, 60, 0.15);
+  transform: translateY(-4px);
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--soil);
+  font-family: 'Crimson Pro', serif;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+/* Quote mejorado */
+.post-content blockquote {
+  border-left: 5px solid var(--clay);
+  background: var(--sand-light);
+  padding: 28px 36px;
+  margin: 40px 0;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--soil-dark);
+  position: relative;
+  border-radius: 0 8px 8px 0;
+}
+
+.post-content blockquote::before {
+  content: '"';
+  font-size: 80px;
+  color: var(--clay);
+  opacity: 0.2;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.post-content blockquote p {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
