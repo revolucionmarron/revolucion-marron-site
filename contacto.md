@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Contacto
-description: "Agenda una conversación técnica sobre Arquitectura Productiva"
+description: "Agenda una conversación técnica sobre Arquitectura Productiva Regenerativa"
 ---
 
 <div style="max-width:1100px;margin:80px auto;padding:0 20px;">
@@ -10,7 +10,7 @@ description: "Agenda una conversación técnica sobre Arquitectura Productiva"
 <header style="text-align:center;margin-bottom:60px;">
   <h1 style="font-size:48px;margin-bottom:20px;color:var(--soil-dark);">Conversemos</h1>
   <p style="font-size:20px;color:var(--text-light);max-width:680px;margin:0 auto;line-height:1.6;">
-    Si estás evaluando rediseñar tu sistema productivo o quieres entender cómo aplicar Arquitectura Productiva en tu predio, agendemos una conversación.
+    Si estás evaluando rediseñar tu sistema productivo o quieres entender cómo aplicar Arquitectura Productiva Regenerativa en tu predio, agendemos una conversación.
   </p>
 </header>
 
@@ -54,7 +54,7 @@ description: "Agenda una conversación técnica sobre Arquitectura Productiva"
         </div>
         <div>
           <h3 style="margin:0;font-size:18px;color:var(--soil);">Email</h3>
-          <p style="margin:4px 0 0 0;font-size:14px;color:var(--text-light);">Respondo en 24 horas</p>
+          <p style="margin:4px 0 0 0;font-size:14px;color:var(--text-light);">Respondo en max 48 horas</p>
         </div>
       </div>
       <p style="margin:0;font-size:16px;">
@@ -137,28 +137,28 @@ description: "Agenda una conversación técnica sobre Arquitectura Productiva"
     <div>
       <h3 style="font-size:20px;color:var(--soil);margin-bottom:12px;">¿Qué información necesito tener lista?</h3>
       <p style="color:var(--text-light);margin:0;line-height:1.7;">
-        Idealmente: superficie del predio (ha), rubro principal (lechería, frutales, etc.), y tu principal desafío económico o productivo actual. Si tienes datos de costos operacionales, mejor aún.
+        Idealmente: superficie del predio (ha), rubro principal (cultivos, lechería, frutales, etc.), y tu principal desafío económico o productivo actual. Si tienes datos de costos operacionales, mejor aún.
       </p>
     </div>
     
     <div>
       <h3 style="font-size:20px;color:var(--soil);margin-bottom:12px;">¿Hay un tamaño mínimo de predio?</h3>
       <p style="color:var(--text-light);margin:0;line-height:1.7;">
-        No. El enfoque de Arquitectura Productiva es escalable y he trabajado con predios desde pequeñas superficies hasta cientos de hectáreas. Lo relevante no es el tamaño, sino la viabilidad económica de la transición.
+        No. El enfoque de Arquitectura Productiva Regenerativa es escalable y he trabajado con predios desde pequeñas superficies hasta cientos de hectáreas. Lo relevante no es el tamaño, sino la viabilidad económica de la transición.
       </p>
     </div>
     
     <div>
       <h3 style="font-size:20px;color:var(--soil);margin-bottom:12px;">¿Realizas visitas a terreno?</h3>
       <p style="color:var(--text-light);margin:0;line-height:1.7;">
-        Sí, tengo disponibilidad para traslados a nivel nacional. Sin embargo, la conversación inicial preliminar es online para optimizar tiempos. Las visitas a terreno se coordinan después de la evaluación inicial.
+        Sí, tengo disponibilidad para traslados. Sin embargo, la conversación inicial preliminar es online para optimizar tiempos. Las visitas a terreno se coordinan después de la evaluación inicial.
       </p>
     </div>
     
     <div>
       <h3 style="font-size:20px;color:var(--soil);margin-bottom:12px;">¿Cuánto tarda en responder emails?</h3>
       <p style="color:var(--text-light);margin:0;line-height:1.7;">
-        Respondo todos los emails en 24 horas. Si es urgente, mejor agenda directamente una conversación o escríbeme por WhatsApp.
+        Respondo todos los emails en 48 horas maximo. Si es urgente, mejor agenda directamente una conversación o escríbeme por WhatsApp.
       </p>
     </div>
     
