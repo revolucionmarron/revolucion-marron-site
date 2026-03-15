@@ -164,25 +164,31 @@ description: Diseño integral de sistemas regenerativos rentables para predios a
   </div>
 </section>
 
+</div>
+
 <!-- Enfoque con Imagen -->
-<section style="
+<section class="enfoque-section" style="
   position: relative;
   background: var(--sand);
   border-radius: 16px;
   margin-bottom: 100px;
   overflow: hidden;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 ">
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; min-height: 500px;">
+  <div class="enfoque-grid">
     
     <!-- Columna izquierda: Imagen -->
-    <div style="
+    <div class="enfoque-image" style="
       background: url('{{ '/assets/images/enfoque-gallinas-huerto.png' | relative_url }}');
       background-size: cover;
       background-position: center;
       position: relative;
+      min-height: 500px;
     ">
       <!-- Overlay sutil -->
-      <div style="
+      <div class="enfoque-overlay" style="
         position: absolute;
         top: 0;
         left: 0;
@@ -193,7 +199,7 @@ description: Diseño integral de sistemas regenerativos rentables para predios a
     </div>
     
     <!-- Columna derecha: Contenido -->
-    <div style="padding: 80px 60px; display: flex; flex-direction: column; justify-content: center;">
+    <div class="enfoque-content" style="padding: 80px 60px; display: flex; flex-direction: column; justify-content: center;">
       <h2 style="font-size: 40px; margin-bottom: 24px; color: var(--soil-dark);">
         Qué es Arquitectura Productiva
       </h2>
@@ -215,43 +221,63 @@ description: Diseño integral de sistemas regenerativos rentables para predios a
   </div>
 </section>
 
-<!-- Responsive para Enfoque -->
 <style>
-/* Enfoque responsive */
+.enfoque-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  min-height: 500px;
+}
+
+/* Gradiente horizontal por defecto en desktop */
+.enfoque-overlay {
+  background: linear-gradient(90deg, transparent 0%, var(--sand) 100%);
+}
+
 @media (max-width: 968px) {
-  section > div[style*="grid-template-columns: 1fr 1fr"] {
+  .enfoque-grid {
     grid-template-columns: 1fr !important;
   }
   
-  section > div[style*="grid-template-columns: 1fr 1fr"] > div:first-child {
+  .enfoque-image {
     min-height: 350px !important;
-    order: 1;
   }
   
-  section > div[style*="grid-template-columns: 1fr 1fr"] > div:last-child {
+  .enfoque-content {
     padding: 50px 40px !important;
-    order: 2;
+  }
+  
+  /* Gradiente vertical en tablet/mobile */
+  .enfoque-overlay {
+    background: linear-gradient(180deg, transparent 0%, transparent 40%, var(--sand) 100%) !important;
   }
 }
 
 @media (max-width: 480px) {
-  section > div[style*="grid-template-columns: 1fr 1fr"] > div:first-child {
-    min-height: 300px !important;
+  .enfoque-image {
+    min-height: 280px !important;
   }
   
-  section > div[style*="grid-template-columns: 1fr 1fr"] > div:last-child {
+  .enfoque-content {
     padding: 40px 24px !important;
   }
   
-  section > div[style*="grid-template-columns: 1fr 1fr"] h2 {
+  .enfoque-content h2 {
     font-size: 32px !important;
   }
   
-  section > div[style*="grid-template-columns: 1fr 1fr"] p {
+  .enfoque-content p {
     font-size: 16px !important;
+  }
+  
+  /* Gradiente más suave en móviles pequeños */
+  .enfoque-overlay {
+    background: linear-gradient(180deg, transparent 0%, transparent 30%, var(--sand) 95%) !important;
   }
 }
 </style>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 40px;">
 
 <!-- Principios -->
 <section style="margin-bottom:100px;">
