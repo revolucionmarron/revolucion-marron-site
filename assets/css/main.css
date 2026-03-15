@@ -417,3 +417,65 @@ css/* ============================================
   text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
+css/* ============================================
+   TABLAS PROFESIONALES
+   ============================================ */
+
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px 0;
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(61, 40, 23, 0.08);
+}
+
+.post-content thead {
+  background: linear-gradient(135deg, var(--soil) 0%, var(--soil-dark) 100%);
+  color: white;
+}
+
+.post-content thead th {
+  padding: 20px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+}
+
+.post-content tbody tr {
+  border-bottom: 1px solid var(--border-light);
+  transition: background-color 0.2s ease;
+}
+
+.post-content tbody tr:hover {
+  background-color: var(--sand-light);
+}
+
+.post-content tbody tr:last-child {
+  border-bottom: none;
+}
+
+.post-content tbody td {
+  padding: 18px 20px;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.post-content tbody td:first-child {
+  font-weight: 600;
+  color: var(--soil);
+}
+
+/* Tabla responsive */
+@media (max-width: 768px) {
+  .post-content table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
