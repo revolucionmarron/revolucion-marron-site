@@ -217,29 +217,38 @@ description: Diseño integral de sistemas regenerativos rentables para predios a
 
 <!-- Responsive para Enfoque -->
 <style>
+/* Enfoque responsive */
 @media (max-width: 968px) {
-  section[style*="grid-template-columns: 1fr 1fr"] > div:first-child {
-    display: grid;
-    grid-template-columns: 1fr !important;
-    min-height: 300px !important;
-  }
-  
-  section[style*="grid-template-columns: 1fr 1fr"] {
+  section > div[style*="grid-template-columns: 1fr 1fr"] {
     grid-template-columns: 1fr !important;
   }
   
-  section[style*="grid-template-columns: 1fr 1fr"] > div:last-child {
-    padding: 60px 40px !important;
+  section > div[style*="grid-template-columns: 1fr 1fr"] > div:first-child {
+    min-height: 350px !important;
+    order: 1;
+  }
+  
+  section > div[style*="grid-template-columns: 1fr 1fr"] > div:last-child {
+    padding: 50px 40px !important;
+    order: 2;
   }
 }
 
 @media (max-width: 480px) {
-  section[style*="grid-template-columns: 1fr 1fr"] > div:first-child {
-    min-height: 250px !important;
+  section > div[style*="grid-template-columns: 1fr 1fr"] > div:first-child {
+    min-height: 300px !important;
   }
   
-  section[style*="grid-template-columns: 1fr 1fr"] > div:last-child {
+  section > div[style*="grid-template-columns: 1fr 1fr"] > div:last-child {
     padding: 40px 24px !important;
+  }
+  
+  section > div[style*="grid-template-columns: 1fr 1fr"] h2 {
+    font-size: 32px !important;
+  }
+  
+  section > div[style*="grid-template-columns: 1fr 1fr"] p {
+    font-size: 16px !important;
   }
 }
 </style>
