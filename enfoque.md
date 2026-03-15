@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Enfoque - Arquitectura Productiva Regenerativa
-description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-5 años. Esto no es ideología: es economía básica.
+description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-5 años
 ---
 
 <style>
