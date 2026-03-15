@@ -376,29 +376,44 @@ footer a:hover {
 }
 ```
 
-8. Scroll abajo
-9. Commit message:
-```
-Corregir CSS completo
-```
-10. Click **"Commit changes"**
+css/* ============================================
+   FEATURED IMAGES
+   ============================================ */
 
----
+.post-featured-image {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(61, 40, 23, 0.1);
+}
 
-## ⏰ **ESPERA 2 MINUTOS**
+.post-featured-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-Después del commit:
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 16px;
+}
 
-1. Ve a **Actions** en tu repo
-2. Espera que el último workflow esté ✅ verde
-3. Debería decir algo como "pages build and deployment" completado
+/* Hero con imagen de fondo */
+.hero-with-image {
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(61, 40, 23, 0.7);
+}
 
----
+.hero-with-image h1,
+.hero-with-image p {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
 
-## 🎯 **VERIFICACIÓN FINAL**
-
-### **Paso 1: Verificar que el CSS está completo**
-
-Abre:
-```
-https://revolucionmarron.cl/assets/css/main.css
