@@ -204,13 +204,6 @@ description: "Arquitectura Productiva: diseño integral de sistemas regenerativo
 </div>
 ```
 
-### **9.3 - Commit**
-```
-Crear página Enfoque completa
-```
-
----
-
 
 Después del deployment verde:
 ```
