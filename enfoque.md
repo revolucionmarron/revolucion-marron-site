@@ -187,7 +187,7 @@ description: "Arquitectura Productiva: diseño integral de sistemas regenerativo
 <section style="text-align:center;margin-top:80px;">
   <h2 style="font-size:32px;margin-bottom:20px;color:#2d201c;">Próximos pasos</h2>
   <p style="font-size:18px;color:#555;margin-bottom:40px;">
-    Explora casos documentados, análisis técnicos y papers traducidos
+    Explora casos documentados, análisis técnicos y publicaciones cientificas
   </p>
   <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap;">
     <a href="/publicaciones">
