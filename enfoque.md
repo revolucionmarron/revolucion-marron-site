@@ -204,7 +204,3 @@ description: "Arquitectura Productiva: diseño integral de sistemas regenerativo
 </div>
 ```
 
-
-Después del deployment verde:
-```
-https://revolucionmarron.cl/enfoque
