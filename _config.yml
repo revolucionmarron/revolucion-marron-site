@@ -10,14 +10,3 @@ lang: es
 author:
   name: Jaime Fernández López
   email: jaime@revolucionmarron.cl
-```
-
-**NOTA:** 
-- Eliminé las comillas en `description` y `url`
-- Eliminé la sección `plugins` (Jekyll las cargará automáticamente)
-- Eliminé `bio` del autor
-- Versión mínima que debe funcionar
-
-5. Commit:
-```
-   Simplificar _config.yml al mínimo
