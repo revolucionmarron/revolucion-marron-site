@@ -1,13 +1,13 @@
 ---
 layout: default
 title: Enfoque
-description: "Arquitectura Productiva: diseño integral de sistemas regenerativos rentables"
+description: "Arquitectura Productiva Regenerativa: diseño integral de sistemas regenerativos rentables"
 ---
 
 <div style="max-width:900px;margin:80px auto;padding:0 20px;">
 
 <header style="text-align:center;margin-bottom:80px;">
-  <h1 style="font-size:48px;margin-bottom:20px;color:#2d201c;">Arquitectura Productiva</h1>
+  <h1 style="font-size:48px;margin-bottom:20px;color:#2d201c;">Arquitectura Productiva Regenerativa</h1>
   <p style="font-size:22px;color:#555;max-width:760px;margin:0 auto;line-height:1.5;">
     "No vendemos técnicas aisladas. Diseñamos sistemas productivos completos donde cada elemento genera valor económico usando herramientas de la naturaleza."
   </p>
@@ -45,7 +45,7 @@ description: "Arquitectura Productiva: diseño integral de sistemas regenerativo
 
 <!-- Qué es -->
 <section style="margin-bottom:80px;background:var(--sand);padding:60px;border-radius:16px;">
-  <h2 style="font-size:36px;margin-bottom:24px;color:#2d201c;">Qué es Arquitectura Productiva</h2>
+  <h2 style="font-size:36px;margin-bottom:24px;color:#2d201c;">Qué es Arquitectura Productiva Regenerativa</h2>
   
   <p style="font-size:18px;line-height:1.7;color:#555;margin-bottom:20px;">
     Es el diseño integral del sistema productivo completo:
@@ -141,7 +141,7 @@ description: "Arquitectura Productiva: diseño integral de sistemas regenerativo
           <td style="padding:20px;color:#666;">Mejora gradual</td>
         </tr>
         <tr>
-          <td style="padding:20px;font-weight:600;color:var(--soil);">Arquitectura Productiva</td>
+          <td style="padding:20px;font-weight:600;color:var(--soil);">Arquitectura Productiva Regenerativa</td>
           <td style="padding:20px;color:#666;">Rentabilidad mediante regeneración</td>
           <td style="padding:20px;color:#666;">Núcleo de decisión</td>
           <td style="padding:20px;color:#666;">Herramienta de negocio</td>
