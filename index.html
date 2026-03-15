@@ -164,27 +164,85 @@ description: Diseño integral de sistemas regenerativos rentables para predios a
   </div>
 </section>
 
-<!-- Enfoque -->
-<section style="background:var(--sand);padding:80px 60px;border-radius:16px;margin-bottom:100px;">
-  <div style="max-width:900px;margin:0 auto;">
-    <h2 style="font-size:40px;margin-bottom:24px;color:var(--soil-dark);text-align:center;">
-      Qué es Arquitectura Productiva
-    </h2>
-    <p style="font-size:18px;line-height:1.8;color:var(--text-light);margin-bottom:24px;">
-      No vendemos técnicas aisladas. Diseñamos sistemas productivos completos donde cada elemento genera valor económico usando herramientas de la naturaleza.
-    </p>
-    <p style="font-size:18px;line-height:1.8;color:var(--text-light);margin-bottom:32px;">
-      Es el diseño integral del sistema productivo: qué produces, dónde, cómo, cuándo y con qué recursos. Todo calculado para maximizar rentabilidad usando la biología del suelo como herramienta productiva.
-    </p>
-    <div style="text-align:center;">
-      <a href="{{ '/enfoque' | relative_url }}">
-        <button style="background:transparent;color:var(--soil);border:2px solid var(--soil);">
-          Conocer enfoque completo
-        </button>
-      </a>
+<!-- Enfoque con Imagen -->
+<section style="
+  position: relative;
+  background: var(--sand);
+  border-radius: 16px;
+  margin-bottom: 100px;
+  overflow: hidden;
+">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; min-height: 500px;">
+    
+    <!-- Columna izquierda: Imagen -->
+    <div style="
+      background: url('{{ '/assets/images/enfoque-gallinas-huerto.png' | relative_url }}');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    ">
+      <!-- Overlay sutil -->
+      <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, transparent 0%, var(--sand) 100%);
+      "></div>
     </div>
+    
+    <!-- Columna derecha: Contenido -->
+    <div style="padding: 80px 60px; display: flex; flex-direction: column; justify-content: center;">
+      <h2 style="font-size: 40px; margin-bottom: 24px; color: var(--soil-dark);">
+        Qué es Arquitectura Productiva
+      </h2>
+      <p style="font-size: 18px; line-height: 1.8; color: var(--text-light); margin-bottom: 24px;">
+        No vendemos técnicas aisladas. Diseñamos sistemas productivos completos donde cada elemento genera valor económico usando herramientas de la naturaleza.
+      </p>
+      <p style="font-size: 18px; line-height: 1.8; color: var(--text-light); margin-bottom: 32px;">
+        Es el diseño integral del sistema productivo: qué produces, dónde, cómo, cuándo y con qué recursos. Todo calculado para maximizar rentabilidad usando la biología del suelo como herramienta productiva.
+      </p>
+      <div>
+        <a href="{{ '/enfoque' | relative_url }}">
+          <button style="background: transparent; color: var(--soil); border: 2px solid var(--soil);">
+            Conocer enfoque completo
+          </button>
+        </a>
+      </div>
+    </div>
+    
   </div>
 </section>
+
+<!-- Responsive para Enfoque -->
+<style>
+@media (max-width: 968px) {
+  section[style*="grid-template-columns: 1fr 1fr"] > div:first-child {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    min-height: 300px !important;
+  }
+  
+  section[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  section[style*="grid-template-columns: 1fr 1fr"] > div:last-child {
+    padding: 60px 40px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  section[style*="grid-template-columns: 1fr 1fr"] > div:first-child {
+    min-height: 250px !important;
+  }
+  
+  section[style*="grid-template-columns: 1fr 1fr"] > div:last-child {
+    padding: 40px 24px !important;
+  }
+}
+</style>
 
 <!-- Principios -->
 <section style="margin-bottom:100px;">
