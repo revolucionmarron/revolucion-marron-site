@@ -1,10 +1,27 @@
 /* Revolución Marrón - Estilos principales */
 
 :root {
-  --soil: #4b2e2a;
-  --clay: #7b5b3d;
-  --sand: #f5efe8;
-  --text: #2f2f2f;
+  /* Paleta principal */
+  --soil-dark: #3d2817;
+  --soil: #6B4423;
+  --soil-light: #8B5E34;
+  --clay: #C97B3C;
+  --accent: #E8B849;
+  
+  /* Backgrounds */
+  --sand-dark: #E8DDD0;
+  --sand: #F5EFE8;
+  --sand-light: #FDFBF7;
+  --white: #FFFFFF;
+  
+  /* Texto */
+  --text: #2F2F2F;
+  --text-light: #666666;
+  --text-muted: #999999;
+  
+  /* Borders */
+  --border-light: #E8DED3;
+  --border: #D8CEC3;
 }
 
 * {
