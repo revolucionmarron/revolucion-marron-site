@@ -1,4 +1,4 @@
-title: Revolución Marrón
+yamltitle: Revolución Marrón
 description: Think Tank en Arquitectura Productiva Regenerativa
 url: https://revolucionmarron.cl
 baseurl: ""
@@ -9,4 +9,30 @@ lang: es
 
 author:
   name: Jaime Fernández López
+  bio: Ingeniero Agrónomo, M.Sc. Economía Agraria y Ambiental
   email: jaime@revolucionmarron.cl
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+logo: /assets/images/logo-rm-social.png
+
+twitter:
+  card: summary_large_image
+
+social:
+  name: Revolución Marrón
+  links:
+    - https://www.linkedin.com/in/jaime-fernandez-l
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
