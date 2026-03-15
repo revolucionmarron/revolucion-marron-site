@@ -19,3 +19,12 @@ plugins:
 timezone: America/Santiago
 lang: es
 ```
+
+**IMPORTANTE:** 
+- NO incluyas la sección de SEO and Social Media por ahora
+- Esto simplifica el archivo para que construya sin errores
+- Después agregamos esas líneas una por una
+
+5. Commit message:
+```
+   Crear _config.yml limpio y simplificado
