@@ -1,149 +1,183 @@
 ---
 layout: default
-title: Inicio
-description: "Think Tank en Arquitectura Productiva Regenerativa"
+title: Think Tank en Arquitectura Productiva
+description: Diseño integral de sistemas regenerativos rentables para predios agrícolas
 ---
 
-<section class="hero">
+<div style="max-width:1200px;margin:0 auto;padding:0 40px;">
 
-<h1>Arquitectura Productiva para la resiliencia del sistema silvoagropecuario.</h1>
-
-<p>
-Revolución Marrón es un espacio de pensamiento técnico y diseño predial dedicado a rediseñar sistemas agrícolas, ganaderos, vitivinícolas, frutícolas y forestales para producir con mayor estabilidad económica, menor dependencia de insumos y mejor integración ecológica.
-</p>
-
-<div class="cta">
-<a href="https://calendly.com/jaime-revolucionmarron/30min" target="_blank" rel="noopener">
-<button>Agendar conversación</button>
-</a>
-</div>
-
+<!-- Hero Section -->
+<section style="padding:100px 0 80px;text-align:center;">
+  <h1 style="font-size:56px;margin-bottom:24px;color:var(--soil-dark);line-height:1.2;">
+    Arquitectura Productiva para la resiliencia del sistema silvoagropecuario
+  </h1>
+  <p style="font-size:20px;color:var(--text-light);max-width:800px;margin:0 auto 40px;line-height:1.6;">
+    Revolución Marrón es un espacio de pensamiento técnico y diseño predial dedicado a rediseñar sistemas agrícolas, ganaderos, vitivinícolas, frutícolas y forestales para producir con mayor estabilidad económica, menor dependencia de insumos y mejor integración ecológica.
+  </p>
+  <a href="https://calendly.com/jaime-revolucionmarron/30min" target="_blank" rel="noopener">
+    <button>Agendar conversación</button>
+  </a>
 </section>
 
-<!-- Sección: Últimas Publicaciones -->
-<section class="section" style="background:white;">
+<!-- Publicaciones Recientes -->
+<section style="margin-bottom:100px;">
+  <div style="text-align:center;margin-bottom:60px;">
+    <h2 style="font-size:40px;margin-bottom:16px;color:var(--soil-dark);">Publicaciones Recientes</h2>
+    <p style="font-size:18px;color:var(--text-light);">
+      Análisis técnicos, traducción de papers científicos y casos documentados con datos reales.
+    </p>
+  </div>
 
-<h2>Publicaciones Recientes</h2>
-
-<p style="max-width:800px;margin:0 auto 40px;color:#555;">
-Análisis técnicos, traducción de papers científicos y casos documentados con datos reales.
-</p>
-
-{% if site.posts.size > 0 %}
   <div class="cards">
     {% for post in site.posts limit:3 %}
-      <div class="card">
-        {% if post.categories %}
-          <div class="post-category">{{ post.categories | first }}</div>
-        {% endif %}
-        
-        <h3>
-          <a href="{{ post.url | relative_url }}" style="color:var(--soil);text-decoration:none;">
-            {{ post.title }}
-          </a>
-        </h3>
-        
-        <p style="color:#666;font-size:15px;">
-          {{ post.excerpt | strip_html | truncatewords: 25 }}
-        </p>
-        
-        <div style="color:#999;font-size:14px;margin-top:12px;">
-          {{ post.date | date: "%d %B %Y" }}
-        </div>
+    <div class="card">
+      <div style="font-size:12px;color:var(--text-muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:1px;">
+        {{ post.categories | first }}
       </div>
+      <h3>
+        <a href="{{ post.url | relative_url }}" style="color:var(--soil);text-decoration:none;">
+          {{ post.title }}
+        </a>
+      </h3>
+      <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      <div style="margin-top:auto;padding-top:20px;">
+        <a href="{{ post.url | relative_url }}" style="color:var(--soil);font-weight:600;text-decoration:none;">
+          Leer más →
+        </a>
+      </div>
+    </div>
     {% endfor %}
   </div>
 
   <div style="text-align:center;margin-top:40px;">
     <a href="{{ '/publicaciones' | relative_url }}">
-      <button>Ver todas las publicaciones</button>
+      <button style="background:transparent;color:var(--soil);border:2px solid var(--soil);">
+        Ver todas las publicaciones
+      </button>
     </a>
   </div>
+</section>
 
-{% else %}
-
-  <div style="background:var(--sand);padding:40px;border-radius:12px;text-align:center;">
-    <p style="color:#666;">
-      Las publicaciones técnicas estarán disponibles próximamente.<br>
-      Suscríbete para recibir notificaciones.
+<!-- Enfoque -->
+<section style="background:var(--sand);padding:80px 60px;border-radius:16px;margin-bottom:100px;">
+  <div style="max-width:900px;margin:0 auto;">
+    <h2 style="font-size:40px;margin-bottom:24px;color:var(--soil-dark);text-align:center;">
+      Qué es Arquitectura Productiva
+    </h2>
+    <p style="font-size:18px;line-height:1.8;color:var(--text-light);margin-bottom:24px;">
+      No vendemos técnicas aisladas. Diseñamos sistemas productivos completos donde cada elemento genera valor económico usando herramientas de la naturaleza.
     </p>
+    <p style="font-size:18px;line-height:1.8;color:var(--text-light);margin-bottom:32px;">
+      Es el diseño integral del sistema productivo: qué produces, dónde, cómo, cuándo y con qué recursos. Todo calculado para maximizar rentabilidad usando la biología del suelo como herramienta productiva.
+    </p>
+    <div style="text-align:center;">
+      <a href="{{ '/enfoque' | relative_url }}">
+        <button style="background:transparent;color:var(--soil);border:2px solid var(--soil);">
+          Conocer enfoque completo
+        </button>
+      </a>
+    </div>
   </div>
-
-{% endif %}
-
 </section>
 
-<section id="enfoque" class="section">
-
-<h2>Del manejo aislado al diseño estructural del sistema</h2>
-
-<p>
-La transición productiva no consiste en cambiar insumos o aplicar nuevas prácticas de manera aislada. Requiere rediseñar la arquitectura del sistema productivo completo: suelo, plantas, animales, flujos de energía y estructura económica del predio.
-</p>
-
-<div style="text-align:center;margin-top:30px;">
-  <a href="{{ '/enfoque' | relative_url }}">
-    <button style="background:transparent;color:var(--soil);border:2px solid var(--soil);">
-      Conocer el enfoque completo
-    </button>
-  </a>
-</div>
-
+<!-- Principios -->
+<section style="margin-bottom:100px;">
+  <h2 style="font-size:40px;margin-bottom:60px;color:var(--soil-dark);text-align:center;">
+    Los 5 pilares del enfoque
+  </h2>
+  
+  <div class="cards">
+    <div class="card">
+      <h3>1. Análisis económico primero</h3>
+      <p>
+        Identificamos dónde se va tu dinero. El objetivo no es "ser regenerativo", es reducir costos y aumentar margen operacional.
+      </p>
+    </div>
+    
+    <div class="card">
+      <h3>2. Herramientas de la naturaleza</h3>
+      <p>
+        Hongos micorrízicos, bacterias fijadoras, fauna del suelo. No son conceptos abstractos: son insumos productivos que reemplazan fertilizantes y pesticidas.
+      </p>
+    </div>
+    
+    <div class="card">
+      <h3>3. Diseño de sistema completo</h3>
+      <p>
+        No parches ni técnicas aisladas. Rediseño integral: flujos de agua, energía, nutrientes, animales. Cada elemento cumple múltiples funciones.
+      </p>
+    </div>
+    
+    <div class="card">
+      <h3>4. Datos y medición</h3>
+      <p>
+        Carbono orgánico, infiltración, producción de biomasa, costos operacionales. Si no se mide, no se puede mejorar.
+      </p>
+    </div>
+    
+    <div class="card">
+      <h3>5. Transición rentable</h3>
+      <p>
+        No quebrar mientras regeneras. Planificación de flujo de caja, timing de inversiones, manejo de riesgo. Horizonte 36 meses.
+      </p>
+    </div>
+  </div>
 </section>
 
-<section id="servicios" class="section">
-
-<h2>Servicios</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Diagnóstico estructural predial</h3>
-<p>
-Evaluación integral del sistema productivo: dependencia de insumos externos, sensibilidad económica, integración biológica y vulnerabilidad estructural del predio.
-</p>
-</div>
-
-<div class="card">
-<h3>Plan Maestro de transición (36 meses)</h3>
-<p>
-Diseño estratégico de transición regenerativa con horizonte de 36 meses, priorización de intervenciones y métricas de desempeño productivo.
-</p>
-</div>
-
-<div class="card">
-<h3>Integración animal</h3>
-<p>
-Diseño de integración funcional de animales en sistemas agrícolas, frutícolas y vitivinícolas como motor económico y regenerativo.
-</p>
-</div>
-
-</div>
-
+<!-- Resultados -->
+<section style="background:var(--soil);color:white;padding:80px 60px;border-radius:16px;margin-bottom:100px;">
+  <h2 style="font-size:40px;margin-bottom:24px;color:white;text-align:center;">
+    Resultados documentados
+  </h2>
+  <p style="font-size:18px;margin-bottom:50px;text-align:center;color:rgba(255,255,255,0.9);">
+    Basados en implementaciones en Chile central (2020-2025)
+  </p>
+  
+  <div class="stats-grid">
+    <div class="stat-item" style="background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2);">
+      <div class="stat-number" style="color:white;">40-65%</div>
+      <div class="stat-label" style="color:rgba(255,255,255,0.8);">Reducción costos insumos</div>
+    </div>
+    
+    <div class="stat-item" style="background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2);">
+      <div class="stat-number" style="color:white;">12-28%</div>
+      <div class="stat-label" style="color:rgba(255,255,255,0.8);">Incremento producción</div>
+    </div>
+    
+    <div class="stat-item" style="background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2);">
+      <div class="stat-number" style="color:white;">+0.4 a +1.2%</div>
+      <div class="stat-label" style="color:rgba(255,255,255,0.8);">Mejora C orgánico (2 años)</div>
+    </div>
+    
+    <div class="stat-item" style="background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2);">
+      <div class="stat-number" style="color:white;">11-22 meses</div>
+      <div class="stat-label" style="color:rgba(255,255,255,0.8);">ROI de transición</div>
+    </div>
+  </div>
+  
+  <p style="text-align:center;margin-top:40px;font-size:14px;opacity:0.8;">
+    * Datos agregados de 15 predios en transición monitoreados entre 2020-2025
+  </p>
 </section>
 
-<section id="principios" class="section principles">
-
-<h2>Principios de Arquitectura Productiva</h2>
-
-<div class="principles-grid">
-
-<div class="principle">Diseño sistémico antes que prácticas aisladas</div>
-<div class="principle">Suelo como infraestructura biológica</div>
-<div class="principle">Diversificación para disminuir riesgo</div>
-<div class="principle">Integración animal como arquitectura funcional</div>
-<div class="principle">Medición económica y ecológica del sistema</div>
+<!-- Sobre Jaime -->
+<section style="margin-bottom:100px;">
+  <div style="max-width:800px;margin:0 auto;text-align:center;">
+    <h2 style="font-size:40px;margin-bottom:24px;color:var(--soil-dark);">
+      Sobre Jaime Fernández López
+    </h2>
+    <p style="font-size:18px;line-height:1.8;color:var(--text-light);margin-bottom:24px;">
+      Ingeniero Agrónomo (PUC), M.Sc. Economía Agraria y Ambiental. Director de Proyectos en Fundación Origen y fundador de Revolución Marrón.
+    </p>
+    <p style="font-size:18px;line-height:1.8;color:var(--text-light);margin-bottom:32px;">
+      Coordino proyectos FIA y FIC en diseño hidrológico Keyline (Maule) y granjas agroecológicas (RM). Mi enfoque: la agricultura regenerativa es una estrategia de negocio superior, no una postura ideológica.
+    </p>
+    <a href="{{ '/contacto' | relative_url }}">
+      <button style="background:transparent;color:var(--soil);border:2px solid var(--soil);">
+        Conversemos
+      </button>
+    </a>
+  </div>
+</section>
 
 </div>
-
-</section>
-
-<section class="section">
-
-<h2>Sobre Jaime Fernández</h2>
-
-<p>
-Ingeniero Agrónomo con especialización en Ciencias Animales y Magíster en Economía Agraria y Ambiental. Su trabajo integra diseño predial, análisis económico y principios de agricultura regenerativa para construir sistemas productivos resilientes.
-</p>
-
-</section>
