@@ -521,7 +521,7 @@ description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-
     No somos una ONG ambiental. Somos un espacio de pensamiento y acción técnica que trabaja con productores, empresas y organizaciones que entienden que <strong>la agricultura regenerativa es una estrategia de negocio superior</strong>, no una postura ideológica.
   </p>
   <p>
-    Fundado por Jaime Fernández López en 2024, nace de la experiencia directa en dirección de proyectos públicos (FIA, FIC), gerencia de empresas agropecuarias, y producción certificada internacional.
+    Fundado por Jaime Fernández López en 2024, nace de la experiencia directa en dirección de proyectos públicos y privados, gerencia de empresas agropecuarias, y producción certificada nacional e internacional.
   </p>
   <p class="highlight-question">
     "¿Por qué los productores siguen usando un modelo que los empobrece?"
