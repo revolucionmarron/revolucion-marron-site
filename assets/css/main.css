@@ -745,6 +745,27 @@ blockquote cite {
 .mb-4 { margin-bottom: 32px; }
 .mb-5 { margin-bottom: 40px; }
 
+/* === HERO SECTION === */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  section[style*="background-attachment: fixed"] {
+    background-attachment: scroll !important;
+    padding: 100px 24px 80px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  section[style*="background-attachment: fixed"] {
+    padding: 80px 20px 60px !important;
+  }
+}
+
 /* === PRINT STYLES === */
 @media print {
   header, footer, nav {
