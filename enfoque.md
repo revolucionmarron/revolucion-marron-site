@@ -8,7 +8,7 @@ description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-
 /* Hero Section */
 .enfoque-hero {
   position: relative;
-  background: linear-gradient(rgba(61, 40, 23, 0.75), rgba(61, 40, 23, 0.75)),
+  background: linear-gradient(rgba(30, 20, 12, 0.85), rgba(30, 20, 12, 0.85)),
               url('{{ '/assets/images/enfoque-hero-cerdos-huerto.png' | relative_url }}');
   background-size: cover;
   background-position: center;
@@ -33,27 +33,33 @@ description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-
 
 .enfoque-hero h1 {
   font-size: clamp(36px, 5vw, 56px);
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   color: white;
-  text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  text-shadow: 0 4px 16px rgba(0,0,0,0.8);
+  font-weight: 700;
 }
 
 .enfoque-hero p {
-  font-size: clamp(16px, 2vw, 20px);
-  line-height: 1.8;
-  max-width: 900px;
-  margin: 0 auto 20px;
+  font-size: clamp(17px, 2vw, 22px);
+  line-height: 1.7;
+  max-width: 850px;
+  margin: 0 auto 24px;
   color: rgba(255,255,255,0.98);
-  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  text-shadow: 0 3px 12px rgba(0,0,0,0.7);
+  font-weight: 500;
 }
 
 .enfoque-hero .highlight-question {
-  font-size: clamp(18px, 2.5vw, 24px);
-  font-weight: 700;
-  color: var(--accent-green);
-  margin-top: 32px;
+  font-size: clamp(20px, 2.8vw, 28px);
+  font-weight: 800;
+  color: #8bc34a;
+  margin-top: 36px;
   font-style: italic;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  text-shadow: 0 3px 16px rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.3);
+  padding: 16px 24px;
+  border-radius: 8px;
+  display: inline-block;
 }
 
 /* Secciones con fondo */
@@ -541,15 +547,9 @@ description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-
 <!-- Hero Section -->
 <div class="enfoque-hero">
   <div class="enfoque-hero-content">
-    <h1>Qué es Revolución Marrón</h1>
+    <h1>Arquitectura Productiva Regenerativa</h1>
     <p>
-      Revolución Marrón es un think tank técnico dedicado a rediseñar sistemas productivos silvoagropecuarios mediante <strong>Arquitectura Productiva Regenerativa</strong>.
-    </p>
-    <p>
-      No somos una ONG ambiental. Somos un espacio de pensamiento y acción técnica que trabaja con productores, empresas y organizaciones que entienden que <strong>la agricultura regenerativa es una estrategia de negocio superior</strong>, no una postura ideológica.
-    </p>
-    <p>
-      Fundado por Jaime Fernández López en 2024, nace de la experiencia directa en dirección de proyectos públicos (FIA, FIC), gerencia de empresas agropecuarias, y producción certificada internacional.
+      Think tank técnico que rediseña sistemas silvoagropecuarios para <strong>maximizar rentabilidad</strong> usando la biología del suelo como herramienta productiva.
     </p>
     <p class="highlight-question">
       "¿Por qué los productores siguen usando un modelo que los empobrece?"
@@ -559,37 +559,32 @@ description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-
 
 <!-- Sección Por Qué Cambiar -->
 <div class="section-white">
-  <h2 class="section-title">Por qué el modelo convencional está cambiando</h2>
+  <h2 class="section-title">Por qué cambiar ahora</h2>
   <p class="section-subtitle">
-    Los productores que están rediseñando sus sistemas hoy tienen una ventaja competitiva de 3-5 años sobre quienes esperan. Esto no es ideología: es economía básica.
+    Ventaja competitiva de 3-5 años para quienes rediseñan hoy. Esto es economía básica, no ideología.
   </p>
   
   <div class="problema-grid">
     
     <div class="problema-card">
-      <h3>Suelos: de pasivo a activo productivo</h3>
-      <div class="stat-highlight">36,5M ha</div>
-      <p>En Chile, <strong>36,5 millones de hectáreas tienen potencial de mejora</strong> en estructura, materia orgánica e infiltración. Esto representa la mayor oportunidad de captura de valor sin expandir superficie.</p>
+      <h3>Suelos: activo productivo</h3>
       <div class="stat-highlight">78%</div>
-      <p>Productores que invierten en biología del suelo están viendo <strong>márgenes brutos 78% mayores</strong> que vecinos convencionales. La diferencia no está en producir más: está en producir con menos costo.</p>
-      <p>Un caso documentado en sistemas similares muestra cómo suelos regenerados pueden recuperar <strong>capacidad productiva en 3-5 años</strong>, convirtiendo un pasivo (tierra degradada) en el activo más valioso del negocio.</p>
+      <p><strong>Márgenes brutos 78% mayores</strong> que vecinos convencionales. La diferencia está en producir con menos costo, no en producir más.</p>
+      <p>Suelos regenerados recuperan capacidad productiva en 3-5 años. Conviertes un pasivo en tu activo más valioso.</p>
     </div>
     
     <div class="problema-card">
-      <h3>Independencia de insumos: ventaja competitiva</h3>
+      <h3>Independencia de insumos</h3>
       <div class="stat-highlight">30-50%</div>
-      <p>Los productores que están reduciendo dependencia de fertilizantes sintéticos están capturando <strong>ahorros de 30-50% en costos directos</strong>, inmediatamente traducibles a mayor margen.</p>
-      <p>Mientras más del <strong>60% de suelos chilenos requieren fertilización correctiva continua</strong>, algunos productores ya están generando fertilidad propia mediante micorrizas, fijación biológica y manejo de coberturas.</p>
-      <p>La pregunta no es si los insumos importados seguirán subiendo. La pregunta es: <strong>¿cuánto dinero dejas de depender del dólar cada temporada?</strong></p>
+      <p><strong>Ahorros de 30-50% en costos directos</strong>, inmediatamente traducibles a mayor margen.</p>
+      <p>La pregunta no es si los insumos seguirán subiendo. Es: <strong>¿cuánto dejas de depender del dólar cada temporada?</strong></p>
     </div>
     
     <div class="problema-card">
-      <h3>Productores regenerativos: márgenes superiores</h3>
+      <h3>Márgenes superiores</h3>
       <div class="stat-highlight">+78%</div>
-      <p>Datos de sistemas regenerativos en EE.UU. muestran <strong>márgenes brutos 78% mayores</strong> que vecinos convencionales. No es magia: es matemática simple.</p>
-      <p>Cuando reduces costos de insumos en 30-50% y mantienes o aumentas ligeramente el precio de venta (certificaciones, mercados premium), <strong>el margen se multiplica</strong>.</p>
-      <p>Fincas regenerativas en Cataluña produjeron <strong>el mismo volumen con 30% menos costo</strong> en cultivos hortícolas. Esa diferencia va directo al bolsillo del productor, no al proveedor de agroquímicos.</p>
-      <p>La ventana de oportunidad está abierta ahora: <strong>quienes rediseñan primero capturan la prima de precio en mercados premium</strong> antes que se sature la oferta.</p>
+      <p>Reducir costos 30-50% + mantener precio de venta = <strong>margen multiplicado</strong>. Matemática simple.</p>
+      <p>Ventana de oportunidad abierta: <strong>quienes rediseñan primero capturan prima de precio</strong> antes que se sature oferta.</p>
     </div>
     
   </div>
@@ -597,12 +592,9 @@ description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-
 
 <!-- Sección Solución -->
 <div class="section-sand">
-  <h2 class="section-title">La solución: Arquitectura Productiva Regenerativa</h2>
+  <h2 class="section-title">Qué es APR</h2>
   <p class="section-subtitle">
-    <strong>Arquitectura Productiva Regenerativa (APR)</strong> es el diseño integral del sistema productivo: qué produces, dónde, cómo, cuándo y con qué recursos. Todo calculado para <strong>maximizar rentabilidad usando la biología del suelo como herramienta productiva</strong>.
-  </p>
-  <p class="section-subtitle">
-    No vendemos técnicas aisladas (cultivos de cobertura, compost, rotaciones). Diseñamos <strong>sistemas completos</strong> donde cada elemento genera valor económico usando herramientas de la naturaleza.
+    Diseño integral del sistema: qué produces, dónde, cómo, cuándo, con qué recursos. Calculado para maximizar rentabilidad usando biología del suelo.
   </p>
   
   <div class="comparison-container">
@@ -611,118 +603,101 @@ description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-
       <div class="comparison-column conventional">
         <h3>Modelo Convencional</h3>
         <ul>
-          <li>Monocultivo o baja diversidad</li>
-          <li>Dependencia de insumos sintéticos</li>
+          <li>Monocultivo</li>
+          <li>Dependencia insumos sintéticos</li>
           <li>Labranza intensiva</li>
-          <li>Costos crecientes de insumos</li>
-          <li>Degradación progresiva del activo</li>
+          <li>Costos crecientes</li>
+          <li>Degradación del activo</li>
           <li>Vulnerabilidad climática</li>
         </ul>
       </div>
       
       <div class="comparison-column regenerative">
-        <h3>Arquitectura Productiva Regenerativa</h3>
+        <h3>APR</h3>
         <ul>
-          <li>Diversidad funcional integrada</li>
-          <li>Producción propia de fertilidad</li>
-          <li>Mínima perturbación del suelo</li>
-          <li>Reducción 30-50% costos insumos</li>
-          <li>Regeneración medible del activo</li>
-          <li>Resiliencia ante eventos extremos</li>
+          <li>Diversidad funcional</li>
+          <li>Producción propia fertilidad</li>
+          <li>Mínima perturbación</li>
+          <li>-30-50% costos insumos</li>
+          <li>Regeneración del activo</li>
+          <li>Resiliencia climática</li>
         </ul>
       </div>
       
     </div>
     
     <div class="principle-box">
-      <p>No es "ser regenerativo". Es reducir costos y aumentar margen operacional.</p>
+      <p>No es "ser regenerativo". Es reducir costos y aumentar margen.</p>
     </div>
   </div>
 </div>
 
 <!-- Sección 5 Pilares -->
 <div class="section-white">
-  <h2 class="section-title">Los 5 pilares del enfoque</h2>
+  <h2 class="section-title">Los 5 pilares</h2>
   
   <div class="pilares-grid">
     
     <div class="pilar-card-enfoque">
       <div class="pilar-number">1</div>
       <h3>Análisis económico primero</h3>
-      <p>Identificamos dónde se va tu dinero. <strong>El 70-80% de los costos operacionales</strong> en sistemas convencionales están concentrados en 3-5 rubros: fertilizantes, pesticidas, combustible, agua, mano de obra.</p>
-      <p>Hacemos análisis de estructura de costos, identificamos dependencias críticas, y diseñamos estrategias de sustitución por procesos biológicos que generen los mismos servicios a menor costo.</p>
-      <p><strong>No comenzamos con el suelo. Comenzamos con tu balance financiero.</strong></p>
+      <p>Identificamos dónde se va tu dinero. <strong>70-80% de costos</strong> en 3-5 rubros: fertilizantes, pesticidas, combustible, agua, mano de obra.</p>
+      <p><strong>Comenzamos con tu balance, no con el suelo.</strong></p>
     </div>
     
     <div class="pilar-card-enfoque destacado">
       <div class="pilar-number">2</div>
       <h3>Herramientas de la naturaleza</h3>
-      <p>Hongos micorrízicos, bacterias fijadoras de nitrógeno, fauna del suelo, coberturas vivas, y <strong>animales integrados al sistema</strong>. No son conceptos abstractos: son <strong>insumos productivos</strong> que reemplazan fertilizantes y pesticidas.</p>
-      <p>Un hongo micorrízico bien establecido puede <strong>incrementar la absorción de fósforo en 30-40%</strong>, eliminando o reduciendo drásticamente la necesidad de fertilización fosforada. Una pradera con leguminosas puede <strong>fijar 100-200 kg N/ha/año</strong> sin costo de insumo.</p>
+      <p>Hongos micorrízicos, bacterias fijadoras, fauna del suelo, animales integrados. <strong>Insumos productivos</strong> que reemplazan fertilizantes y pesticidas.</p>
       
-      <h4>Los animales: pieza fundamental del sistema</h4>
-      <p>La integración animal no es opcional: es <strong>fundamental para restablecer los ciclos del agua, minerales, nutrientes y energía</strong>.</p>
+      <h4>Animales: pieza fundamental</h4>
       
       <div class="ciclos-grid">
         <div class="ciclo-item">
-          <strong>Ciclo del agua</strong>
-          <p>El pastoreo rotativo estimula crecimiento radicular profundo, aumenta infiltración y reduce escorrentía. Las pezuñas rompen costras superficiales.</p>
+          <strong>Ciclo agua</strong>
+          <p>Pastoreo rotativo aumenta infiltración. Pezuñas rompen costras.</p>
         </div>
         
         <div class="ciclo-item">
-          <strong>Ciclo de nutrientes</strong>
-          <p>Los animales concentran nutrientes dispersos en el paisaje (forraje) y los devuelven al suelo en forma altamente disponible (estiércol, orina).</p>
+          <strong>Ciclo nutrientes</strong>
+          <p>Concentran nutrientes dispersos y los devuelven vía estiércol/orina.</p>
         </div>
         
         <div class="ciclo-item">
-          <strong>Ciclo de minerales</strong>
-          <p>La orina aporta N, P, K y micronutrientes. El estiércol incorpora materia orgánica y alimenta la biología del suelo. Sin costo de insumo.</p>
+          <strong>Ciclo minerales</strong>
+          <p>N, P, K, micronutrientes sin costo de insumo.</p>
         </div>
         
         <div class="ciclo-item">
-          <strong>Ciclo de energía</strong>
-          <p>Los animales convierten energía solar capturada por plantas en proteína animal de alto valor, estimulando rebrote y captura de carbono.</p>
+          <strong>Ciclo energía</strong>
+          <p>Convierten energía solar en proteína, estimulan rebrote.</p>
         </div>
       </div>
       
-      <p><strong>Estas no son promesas: son procesos biológicos medibles y replicables.</strong></p>
+      <p><strong>Procesos biológicos medibles y replicables.</strong></p>
     </div>
     
     <div class="pilar-card-enfoque">
       <div class="pilar-number">3</div>
-      <h3>Diseño de sistema completo</h3>
-      <p>No parches. No técnicas aisladas. <strong>Rediseño integral</strong>: flujos de agua (diseño Keyline, infiltración), flujos de energía (radiación solar, fotosíntesis), flujos de nutrientes (ciclos cerrados), integración animal (pastoreo rotativo, gallinas móviles).</p>
-      <p>Cada elemento cumple <strong>múltiples funciones</strong>. Las ovejas no solo producen carne y lana: controlan malezas, fertilizan, estimulan rebrote, aumentan infiltración.</p>
-      <p>Diseñamos para que el sistema genere servicios ecosistémicos que antes comprabas como insumos.</p>
+      <h3>Diseño sistema completo</h3>
+      <p><strong>Rediseño integral:</strong> agua (Keyline), energía (fotosíntesis), nutrientes (ciclos cerrados), animales (pastoreo rotativo).</p>
+      <p>Cada elemento cumple múltiples funciones. El sistema genera servicios que antes comprabas.</p>
     </div>
     
     <div class="pilar-card-enfoque">
       <div class="pilar-number">4</div>
       <h3>Datos y medición</h3>
-      <p><strong>Si no se mide, no se puede mejorar.</strong></p>
-      <p>Establecemos líneas base y monitoreamos indicadores clave:</p>
-      <ul style="list-style: disc; padding-left: 20px; margin: 16px 0;">
-        <li>Carbono orgánico del suelo (laboratorio)</li>
-        <li>Tasa de infiltración (prueba de campo)</li>
-        <li>Producción de biomasa (kg MS/ha)</li>
-        <li>Estructura de costos ($/unidad productiva)</li>
-        <li>Margen operacional (costos-ingresos)</li>
-      </ul>
-      <p>Medimos cada 6-12 meses. Los datos guían las decisiones, no las intuiciones.</p>
+      <p><strong>Si no se mide, no se mejora.</strong></p>
+      <p>Indicadores: carbono orgánico, infiltración, biomasa, estructura costos, margen operacional.</p>
+      <p>Medición cada 6-12 meses.</p>
     </div>
     
     <div class="pilar-card-enfoque">
       <div class="pilar-number">5</div>
       <h3>Transición rentable</h3>
       <p><strong>No quebrar mientras regeneras.</strong></p>
-      <p>La transición toma 1-3 años dependiendo del estado inicial del suelo y el sistema productivo. Durante este período:</p>
-      <ul style="list-style: disc; padding-left: 20px; margin: 16px 0;">
-        <li>Planificación de flujo de caja mensual</li>
-        <li>Timing de inversiones (no todo al inicio)</li>
-        <li>Manejo de riesgo (diversificación)</li>
-        <li>Horizonte 36 meses para evaluación completa</li>
-      </ul>
-      <p>Priorizamos cambios de <strong>alto impacto, bajo costo</strong> en los primeros 12 meses para generar ahorros inmediatos que financien inversiones posteriores.</p>
+      <p>Transición 1-3 años. Flujo caja mensual, timing inversiones, horizonte 36 meses.</p>
+      <p>Cambios <strong>alto impacto, bajo costo</strong> primeros 12 meses.</p>
     </div>
     
   </div>
@@ -730,53 +705,47 @@ description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-
 
 <!-- Sección Beneficios -->
 <div class="section-dark">
-  <h2 class="section-title">Beneficios de la Arquitectura Productiva Regenerativa</h2>
+  <h2 class="section-title">Beneficios</h2>
   <p class="section-subtitle">
-    Ventajas económicas y operacionales respaldadas por evidencia científica
+    Ventajas económicas respaldadas por evidencia
   </p>
   
   <div class="beneficios-grid">
     
     <div class="beneficio-card">
       <div class="beneficio-number">30-50%</div>
-      <div class="beneficio-label">Reducción costos insumos</div>
-      <p>Menor dependencia de fertilizantes y pesticidas sintéticos. Fincas regenerativas en Cataluña lograron 30% de ahorro en cultivos hortícolas manteniendo la misma producción.</p>
+      <div class="beneficio-label">Reducción costos</div>
+      <p>Menor dependencia fertilizantes y pesticidas sintéticos.</p>
     </div>
     
     <div class="beneficio-card">
       <div class="beneficio-number" style="font-size: 32px;">Independencia</div>
-      <div class="beneficio-label">Menor volatilidad externa</div>
-      <p>Reducción de exposición a fluctuaciones de dólar y mercado internacional. Producción propia en finca de compost, biofertilizantes, y manejo biológico de plagas.</p>
+      <div class="beneficio-label">Menor volatilidad</div>
+      <p>Producción propia: compost, biofertilizantes, manejo biológico.</p>
     </div>
     
     <div class="beneficio-card">
       <div class="beneficio-number" style="font-size: 32px;">+Resiliencia</div>
-      <div class="beneficio-label">Mayor estabilidad climática</div>
-      <p>Sistemas más resistentes ante sequías, heladas y eventos extremos. Suelos con mayor materia orgánica retienen hasta 20.000 litros más de agua por hectárea.</p>
+      <div class="beneficio-label">Estabilidad climática</div>
+      <p>+20.000 litros agua/ha. Resistencia sequías y eventos extremos.</p>
     </div>
     
     <div class="beneficio-card">
       <div class="beneficio-number">+30%</div>
       <div class="beneficio-label">Mercados premium</div>
-      <p>Acceso a certificaciones internacionales:</p>
-      <ul>
-        <li>Regenerative Organic Certified (ROC)</li>
-        <li>Land to Market (Savory Institute)</li>
-        <li>Regenagri (Control Union)</li>
-      </ul>
-      <p>Prima de precio de hasta +30% en mercados exigentes proyectada para 2035.</p>
+      <p>Certificaciones: ROC, Land to Market, Regenagri. Prima +30% proyectada 2035.</p>
     </div>
     
     <div class="beneficio-card">
-      <div class="beneficio-number" style="font-size: 28px;">Igual/Superior</div>
+      <div class="beneficio-number" style="font-size: 28px;">78% mayor</div>
       <div class="beneficio-label">Rentabilidad</div>
-      <p>Mayor rentabilidad que sistema convencional, incluso con producción algo menor, debido a reducción significativa de costos. Sistemas regenerativos en EE.UU. muestran márgenes brutos 78% mayores.</p>
+      <p>Márgenes superiores por reducción costos, no aumento producción.</p>
     </div>
     
     <div class="beneficio-card">
-      <div class="beneficio-number" style="font-size: 28px;">Bonos carbono</div>
+      <div class="beneficio-number" style="font-size: 28px;">Bonos CO₂</div>
       <div class="beneficio-label">Ingresos adicionales</div>
-      <p>Acceso a mercados de carbono mediante captura y secuestro en suelo. Compensaciones por servicios ecosistémicos (retención hídrica, biodiversidad, control de erosión).</p>
+      <p>Mercados carbono + compensaciones servicios ecosistémicos.</p>
     </div>
     
   </div>
@@ -785,14 +754,11 @@ description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-
 <!-- Sección CTA -->
 <div class="section-sand">
   <h2 class="section-title">Próximos pasos</h2>
-  <p class="section-subtitle" style="margin-bottom: 50px;">
-    ¿Listo para rediseñar tu sistema productivo?
-  </p>
   
   <div class="cta-section">
     <div class="cta-box">
-      <p><strong>Agenda una conversación de 30 minutos</strong> para revisar tu sistema actual, identificar dependencias críticas, y explorar oportunidades de transición rentable.</p>
-      <p><a href="https://calendly.com/jaime-revolucionmarron/30min" target="_blank" rel="noopener" class="button">Agendar conversación →</a></p>
+      <p><strong>Conversación 30 minutos:</strong> revisión sistema actual, dependencias críticas, oportunidades transición rentable.</p>
+      <p><a href="https://calendly.com/jaime-revolucionmarron/30min" target="_blank" rel="noopener" class="button">Agendar →</a></p>
     </div>
     
     <div class="contact-options">
