@@ -193,7 +193,7 @@ description: "Arquitectura Productiva: diseño integral de sistemas regenerativo
     <a href="{{ '/publicaciones' | relative_url }}">
       <button>Ver publicaciones</button>
     </a>
-    <a href="[https://calendly.com/jaime-revolucionmarron/30min]" target="_blank" rel="noopener">
+    <a href="https://calendly.com/jaime-revolucionmarron/30min" target="_blank" rel="noopener">
       <button style="background:transparent;color:var(--soil);border:2px solid var(--soil);">
         Agendar conversación
       </button>
