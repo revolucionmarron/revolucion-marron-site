@@ -36,3 +36,25 @@ colors:
   clay: "#7b5b3d"
   sand: "#f5efe8"
   text: "#2f2f2f"
+
+# SEO y Redes Sociales
+logo: /assets/images/logo-rm-social.png
+twitter:
+  card: summary_large_image
+social:
+  name: Revolución Marrón
+  links:
+    - https://www.linkedin.com/in/jaime-fernandez-l
+```
+
+4. Commit:
+```
+   # SEO y Redes Sociales
+logo: /assets/images/logo-rm-social.png
+twitter:
+  card: summary_large_image
+social:
+  name: Revolución Marrón
+  links:
+    - https://www.linkedin.com/in/jaime-fernandez-l
+```
