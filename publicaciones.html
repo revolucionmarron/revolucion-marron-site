@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Publicaciones
-description: "Análisis técnicos, publicaciones científicas y casos documentados"
+description: "Análisis técnicos, papers traducidos y casos documentados"
 ---
 
 <div style="max-width:1100px;margin:80px auto;padding:0 20px;">
@@ -15,14 +15,12 @@ description: "Análisis técnicos, publicaciones científicas y casos documentad
 
   {% if site.posts.size > 0 %}
   
-    <!-- Filtros por categoría (futuro) -->
     <div style="margin-bottom:40px;text-align:center;">
       <p style="color:#999;font-size:14px;">
         {{ site.posts.size }} {% if site.posts.size == 1 %}publicación{% else %}publicaciones{% endif %}
       </p>
     </div>
 
-    <!-- Lista de publicaciones -->
     <div style="display:grid;gap:40px;">
       {% for post in site.posts %}
         <article class="card" style="display:grid;gap:20px;">
@@ -60,7 +58,6 @@ description: "Análisis técnicos, publicaciones científicas y casos documentad
 
   {% else %}
   
-    <!-- Estado vacío -->
     <div style="background:var(--sand);padding:80px 40px;border-radius:16px;text-align:center;">
       <h2 style="color:var(--soil);margin-bottom:16px;font-size:28px;">Próximamente</h2>
       <p style="color:#666;font-size:18px;line-height:1.6;max-width:600px;margin:0 auto 30px;">
@@ -77,19 +74,11 @@ description: "Análisis técnicos, publicaciones científicas y casos documentad
 </div>
 ```
 
-4. Commit: `Crear página de publicaciones`
-
 ---
 
-## 🎯 **PASO 8: CREAR PRIMER ARTÍCULO DE PRUEBA**
+### **Paso 4: Commit**
 
-Ahora publiquemos un artículo de prueba para verificar que todo funciona.
-
-### **8.1 - Crear artículo en `_posts/`**
-
-1. Navega a la carpeta `_posts/`
-2. **Add file** → **Create new file**
-
-3. **IMPORTANTE - Nombre del archivo** (formato obligatorio):
+1. Scroll abajo
+2. Mensaje:
 ```
-2026-03-15-bienvenida-revolucion-marron.md
+Corregir código de página publicaciones
