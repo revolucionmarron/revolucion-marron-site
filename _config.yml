@@ -1,16 +1,16 @@
-# Configuración del sitio
+# Site settings
 title: Revolución Marrón
 description: "Think Tank en Arquitectura Productiva Regenerativa"
 url: "https://revolucionmarron.cl"
 baseurl: ""
 
-# Autor
+# Author information
 author:
   name: Jaime Fernández López
   bio: "Ingeniero Agrónomo, M.Sc. Economía Agraria y Ambiental"
   email: jaime@revolucionmarron.cl
 
-# Jekyll settings
+# Build settings
 markdown: kramdown
 permalink: /publicaciones/:title/
 
@@ -20,31 +20,31 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Paginación
-paginate: 9
-paginate_path: "/publicaciones/page:num/"
-
-# Timezone
+# Timezone and language
 timezone: America/Santiago
-
-# Idioma
 lang: es
 
-# Colores (para usar en templates)
-colors:
-  soil: "#4b2e2a"
-  clay: "#7b5b3d"
-  sand: "#f5efe8"
-  text: "#2f2f2f"
-
-# SEO y Redes Sociales
+# SEO and Social Media
 logo: /assets/images/logo-rm-social.png
+
 twitter:
   card: summary_large_image
+
 social:
   name: Revolución Marrón
   links:
     - https://www.linkedin.com/in/jaime-fernandez-l
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
 ```
 
-```
+[Pega aquí el contenido completo]
