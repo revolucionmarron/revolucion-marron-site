@@ -1,0 +1,21 @@
+title: Revolución Marrón
+description: "Think Tank en Arquitectura Productiva Regenerativa"
+url: "https://revolucionmarron.cl"
+baseurl: ""
+
+author:
+  name: Jaime Fernández López
+  bio: "Ingeniero Agrónomo, M.Sc. Economía Agraria y Ambiental"
+  email: jaime@revolucionmarron.cl
+
+markdown: kramdown
+permalink: /publicaciones/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+timezone: America/Santiago
+lang: es
+```
