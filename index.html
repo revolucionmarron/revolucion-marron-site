@@ -4,23 +4,129 @@ title: Think Tank en Arquitectura Productiva
 description: Diseño integral de sistemas regenerativos rentables para predios agrícolas
 ---
 
-<div style="max-width:1200px;margin:0 auto;padding:0 40px;">
-
-<!-- Hero Section -->
-<section style="padding:100px 0 80px;text-align:center;">
-  <h1 style="font-size:56px;margin-bottom:24px;color:var(--soil-dark);line-height:1.2;">
-    Arquitectura Productiva para la resiliencia del sistema silvoagropecuario
-  </h1>
-  <p style="font-size:20px;color:var(--text-light);max-width:800px;margin:0 auto 40px;line-height:1.6;">
-    Revolución Marrón es un espacio de pensamiento técnico y diseño predial dedicado a rediseñar sistemas agrícolas, ganaderos, vitivinícolas, frutícolas y forestales para producir con mayor estabilidad económica, menor dependencia de insumos y mejor integración ecológica.
-  </p>
-  <a href="https://calendly.com/jaime-revolucionmarron/30min" target="_blank" rel="noopener">
-    <button>Agendar conversación</button>
-  </a>
+<!-- Hero Section con Imagen de Fondo -->
+<section style="
+  position:relative;
+  background: linear-gradient(rgba(61, 40, 23, 0.65), rgba(61, 40, 23, 0.65)),
+              url('{{ '/assets/images/hero-sistema-integrado.jpg' | relative_url }}');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 140px 40px 120px;
+  text-align: center;
+  overflow: hidden;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+">
+  
+  <!-- Overlay pattern sutil -->
+  <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(107, 142, 35, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+  "></div>
+  
+  <div style="position:relative;z-index:1;max-width:900px;margin:0 auto;">
+    <h1 style="
+      font-size:clamp(36px, 6vw, 64px);
+      margin-bottom:28px;
+      color:white;
+      line-height:1.15;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      font-weight:700;
+    ">
+      Arquitectura Productiva para la resiliencia del sistema silvoagropecuario
+    </h1>
+    
+    <p style="
+      font-size:clamp(16px, 2vw, 22px);
+      color:rgba(255,255,255,0.95);
+      max-width:780px;
+      margin:0 auto 48px;
+      line-height:1.7;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    ">
+      Revolución Marrón es un espacio de pensamiento técnico y diseño predial dedicado a rediseñar sistemas agrícolas, ganaderos, vitivinícolas, frutícolas y forestales para producir con mayor estabilidad económica, menor dependencia de insumos y mejor integración ecológica.
+    </p>
+    
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://calendly.com/jaime-revolucionmarron/30min" target="_blank" rel="noopener">
+        <button style="
+          background: linear-gradient(135deg, var(--accent-green) 0%, #5a7a1e 100%);
+          font-size:18px;
+          padding:16px 40px;
+          box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        ">
+          Agendar conversación
+        </button>
+      </a>
+      
+      <a href="{{ '/enfoque' | relative_url }}">
+        <button style="
+          background: rgba(255,255,255,0.15);
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border: 2px solid rgba(255,255,255,0.4);
+          color: white;
+          font-size:18px;
+          padding:16px 40px;
+          box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+        ">
+          Conocer el enfoque
+        </button>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Indicador scroll -->
+  <div style="
+    position:absolute;
+    bottom:30px;
+    left:50%;
+    transform:translateX(-50%);
+    color:rgba(255,255,255,0.7);
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    animation: bounce 2s infinite;
+  ">
+    <div style="margin-bottom:8px;">Explorar</div>
+    <div style="font-size:20px;">↓</div>
+  </div>
 </section>
 
+<style>
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-10px); }
+}
+
+@media (max-width: 768px) {
+  section[style*="background-attachment: fixed"] {
+    background-attachment: scroll !important;
+    padding: 100px 24px 80px !important;
+    min-height: 70vh !important;
+  }
+}
+
+@media (max-width: 480px) {
+  section[style*="background-attachment: fixed"] {
+    padding: 80px 20px 60px !important;
+    min-height: 60vh !important;
+  }
+}
+</style>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 40px;">
+
 <!-- Publicaciones Recientes -->
-<section style="margin-bottom:100px;">
+<section style="margin:100px 0;">
   <div style="text-align:center;margin-bottom:60px;">
     <h2 style="font-size:40px;margin-bottom:16px;color:var(--soil-dark);">Publicaciones Recientes</h2>
     <p style="font-size:18px;color:var(--text-light);">
