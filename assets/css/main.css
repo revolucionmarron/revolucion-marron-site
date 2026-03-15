@@ -1,6 +1,7 @@
 /* ===================================
    REVOLUCIÓN MARRÓN - MAIN STYLES
    Think Tank en Arquitectura Productiva
+   Versión 2.0 - Contraste Mejorado
    =================================== */
 
 /* === IMPORTS === */
@@ -18,15 +19,20 @@
   --sand-light: #FDFBF7;
   --white: #FFFFFF;
   
+  /* Colores de acento */
+  --accent-green: #6B8E23;
+  --accent-blue: #2C5F7C;
+  
   /* Colores de texto */
   --text-primary: #2d201c;
   --text-light: #555555;
   --text-muted: #999999;
   
-  /* Sombras */
-  --shadow-sm: 0 2px 8px rgba(61, 40, 23, 0.08);
-  --shadow-md: 0 4px 16px rgba(61, 40, 23, 0.12);
-  --shadow-lg: 0 8px 32px rgba(61, 40, 23, 0.16);
+  /* Sombras mejoradas */
+  --shadow-sm: 0 2px 12px rgba(61, 40, 23, 0.1);
+  --shadow-md: 0 8px 24px rgba(61, 40, 23, 0.15);
+  --shadow-lg: 0 16px 48px rgba(61, 40, 23, 0.25);
+  --shadow-xl: 0 24px 64px rgba(61, 40, 23, 0.3);
   
   /* Tipografía */
   --font-serif: 'Crimson Pro', Georgia, serif;
@@ -201,26 +207,36 @@ button, .button {
   font-size: 16px;
   font-weight: 600;
   padding: 14px 32px;
-  background: var(--soil);
+  background: linear-gradient(135deg, var(--soil) 0%, var(--soil-dark) 100%);
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: all var(--transition-normal);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
   position: relative;
   overflow: hidden;
   display: inline-block;
 }
 
 button:hover, .button:hover {
-  background: var(--soil-dark);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  background: linear-gradient(135deg, var(--soil-dark) 0%, #2d1f14 100%);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
 }
 
 button:active, .button:active {
-  transform: translateY(0);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Botón secundario con acento verde */
+button.secondary, .button.secondary {
+  background: linear-gradient(135deg, var(--accent-green) 0%, #5a7a1e 100%);
+}
+
+button.secondary:hover, .button.secondary:hover {
+  background: linear-gradient(135deg, #5a7a1e 0%, #4a6518 100%);
 }
 
 /* === CARDS === */
@@ -233,18 +249,37 @@ button:active, .button:active {
 
 .card {
   background: white;
-  border: 1px solid rgba(107, 68, 35, 0.1);
-  border-radius: 12px;
+  border: 1px solid rgba(107, 68, 35, 0.08);
+  border-radius: 16px;
   padding: 32px;
   transition: all var(--transition-normal);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--clay) 0%, var(--accent) 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-normal);
+}
+
+.card:hover::before {
+  transform: scaleX(1);
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
   border-color: var(--clay);
 }
 
@@ -263,24 +298,42 @@ button:active, .button:active {
 
 /* === HIGHLIGHT BOXES === */
 .highlight-box {
-  background: linear-gradient(135deg, var(--sand-light) 0%, var(--sand) 100%);
-  border-left: 4px solid var(--clay);
-  padding: 24px 28px;
-  border-radius: 8px;
+  background: linear-gradient(135deg, #ffffff 0%, var(--sand-light) 100%);
+  border-left: 6px solid var(--clay);
+  padding: 28px 32px;
+  border-radius: 12px;
   margin: 24px 0;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(232, 184, 73, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(30%, -30%);
 }
 
 .highlight-box h3 {
   color: var(--soil-dark);
   margin-bottom: 12px;
   font-size: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .highlight-box p, .highlight-box ul {
   color: var(--text-light);
   font-size: 15px;
   line-height: 1.8;
+  position: relative;
+  z-index: 1;
 }
 
 .highlight-box ul {
@@ -293,11 +346,12 @@ button:active, .button:active {
 
 /* === WARNING BOX === */
 .warning-box {
-  background: #FFF9E6;
-  border-left: 4px solid #E8B849;
-  padding: 20px 24px;
-  border-radius: 8px;
+  background: linear-gradient(135deg, #FFF9E6 0%, #FFFBF0 100%);
+  border-left: 6px solid #E8B849;
+  padding: 24px 28px;
+  border-radius: 12px;
   margin: 24px 0;
+  box-shadow: var(--shadow-sm);
 }
 
 .warning-box p {
@@ -307,11 +361,12 @@ button:active, .button:active {
 
 /* === SUCCESS BOX === */
 .success-box {
-  background: #F0F9F4;
-  border-left: 4px solid #4CAF50;
-  padding: 20px 24px;
-  border-radius: 8px;
+  background: linear-gradient(135deg, #F0F9F4 0%, #F8FCF9 100%);
+  border-left: 6px solid var(--accent-green);
+  padding: 24px 28px;
+  border-radius: 12px;
   margin: 24px 0;
+  box-shadow: var(--shadow-sm);
 }
 
 .success-box p {
@@ -328,27 +383,55 @@ button:active, .button:active {
 }
 
 .stat-item {
-  background: white;
+  background: linear-gradient(135deg, white 0%, var(--sand-light) 100%);
   border: 2px solid var(--sand);
-  border-radius: 12px;
-  padding: 28px 24px;
+  border-radius: 16px;
+  padding: 32px 24px;
   text-align: center;
   transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-item::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(232, 184, 73, 0.05) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.stat-item:hover::before {
+  opacity: 1;
 }
 
 .stat-item:hover {
-  border-color: var(--clay);
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
+  border-color: var(--accent-green);
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: var(--shadow-lg);
 }
 
 .stat-number {
   font-family: var(--font-serif);
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 700;
   color: var(--soil);
   margin-bottom: 8px;
   line-height: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.stat-number.positive {
+  color: var(--accent-green);
+}
+
+.stat-number.negative {
+  color: var(--clay);
 }
 
 .stat-label {
@@ -357,6 +440,8 @@ button:active, .button:active {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1;
 }
 
 /* === TABLES === */
@@ -366,7 +451,7 @@ table {
   background: white;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
   margin: 24px 0;
 }
 
@@ -411,26 +496,27 @@ tbody td:first-child {
 /* === BLOCKQUOTES === */
 blockquote {
   position: relative;
-  padding: 24px 28px 24px 60px;
+  padding: 32px 32px 32px 70px;
   margin: 32px 0;
-  background: var(--sand-light);
-  border-left: 4px solid var(--clay);
-  border-radius: 8px;
+  background: linear-gradient(135deg, var(--sand-light) 0%, white 100%);
+  border-left: 6px solid var(--accent-green);
+  border-radius: 12px;
   font-family: var(--font-serif);
   font-size: 18px;
-  line-height: 1.7;
+  line-height: 1.8;
   color: var(--text-primary);
   font-style: italic;
+  box-shadow: var(--shadow-md);
 }
 
 blockquote::before {
   content: '"';
   position: absolute;
-  left: 20px;
-  top: 20px;
-  font-size: 48px;
-  color: var(--clay);
-  opacity: 0.3;
+  left: 24px;
+  top: 24px;
+  font-size: 64px;
+  color: var(--accent-green);
+  opacity: 0.2;
   font-family: Georgia, serif;
   line-height: 1;
 }
@@ -442,10 +528,11 @@ blockquote p {
 
 blockquote cite {
   display: block;
-  margin-top: 12px;
+  margin-top: 16px;
   font-size: 14px;
   color: var(--text-muted);
   font-style: normal;
+  font-weight: 600;
 }
 
 /* === ANIMATIONS === */
@@ -464,19 +551,82 @@ blockquote cite {
   animation: fadeIn 0.6s ease;
 }
 
+/* === GRADIENTES DE SECCIÓN === */
+.section-gradient {
+  background: linear-gradient(135deg, var(--sand-light) 0%, white 50%, var(--sand-light) 100%);
+}
+
+.section-dark {
+  background: linear-gradient(135deg, var(--soil-dark) 0%, var(--soil) 100%);
+  color: white;
+}
+
+.section-accent {
+  background: linear-gradient(135deg, var(--accent-green) 0%, #5a7a1e 100%);
+  color: white;
+}
+
+/* === BORDES DECORATIVOS === */
+.border-top-accent {
+  border-top: 4px solid;
+  border-image: linear-gradient(90deg, var(--clay) 0%, var(--accent) 50%, var(--clay) 100%) 1;
+}
+
+.border-left-accent {
+  border-left: 4px solid;
+  border-image: linear-gradient(180deg, var(--clay) 0%, var(--accent) 50%, var(--clay) 100%) 1;
+}
+
+/* === EFECTOS DE HOVER MEJORADOS === */
+.hover-lift {
+  transition: all var(--transition-normal);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* === BADGES DE CATEGORÍA === */
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge.arquitectura {
+  background: linear-gradient(135deg, var(--soil) 0%, var(--soil-dark) 100%);
+  color: white;
+}
+
+.badge.papers {
+  background: linear-gradient(135deg, var(--accent-green) 0%, #5a7a1e 100%);
+  color: white;
+}
+
+.badge.casos {
+  background: linear-gradient(135deg, var(--clay) 0%, var(--accent) 100%);
+  color: white;
+}
+
+.badge.economia {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, #234a60 100%);
+  color: white;
+}
+
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
   header {
-    padding: 16px 24px;
+    padding: 14px 24px;
     flex-wrap: wrap;
   }
   
   .logo img {
     height: 36px !important;
-  }
-  
-  .logo span {
-    font-size: 18px !important;
   }
   
   nav {
@@ -513,7 +663,7 @@ blockquote cite {
   }
   
   blockquote::before {
-    font-size: 36px;
+    font-size: 48px;
     left: 16px;
   }
   
@@ -535,10 +685,6 @@ blockquote cite {
     height: 32px !important;
   }
   
-  .logo span {
-    display: none;
-  }
-  
   nav {
     gap: 16px;
     margin-top: 12px;
@@ -553,7 +699,7 @@ blockquote cite {
   }
   
   .stat-number {
-    font-size: 36px;
+    font-size: 40px;
   }
   
   button, .button {
@@ -615,4 +761,3 @@ blockquote cite {
     page-break-inside: avoid;
   }
 }
-```
