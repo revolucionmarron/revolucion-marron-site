@@ -563,7 +563,7 @@ description: Diseño integral de sistemas regenerativos rentables para predios a
     Ventajas económicas y operacionales respaldadas por evidencia científica
   </p>
   
-  <div class="stats-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+  <div class="stats-grid">
     <div class="stat-item" style="background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2);">
       <div class="stat-number" style="color:white;">30-50%</div>
       <div class="stat-label" style="color:rgba(255,255,255,0.95);">Reducción costos insumos</div>
@@ -617,6 +617,57 @@ description: Diseño integral de sistemas regenerativos rentables para predios a
     Información basada en estudios científicos y reportes de implementación en agricultura regenerativa
   </p>
 </section>
+
+<style>
+/* Stats Grid - Beneficios */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* FIX RESPONSIVE MÓVIL - Beneficios */
+@media (max-width: 968px) {
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    padding: 0 20px;
+  }
+  
+  .stat-item {
+    min-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  section[style*="background:var(--soil)"] {
+    padding: 60px 24px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    padding: 0 !important;
+  }
+  
+  .stat-item {
+    padding: 28px 20px !important;
+  }
+  
+  section[style*="background:var(--soil)"] {
+    padding: 50px 20px !important;
+  }
+  
+  .stat-number {
+    font-size: 36px !important;
+  }
+  
+  .stat-label {
+    font-size: 16px !important;
+  }
+}
+</style>
 
 <!-- Sobre Jaime -->
 <section style="margin-bottom:100px;">
