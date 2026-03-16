@@ -16,7 +16,6 @@ description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-
   color: white;
   padding: 140px 40px 100px;
   text-align: center;
-  border-radius: 16px;
   margin-bottom: 80px;
   box-shadow: var(--shadow-xl);
   min-height: 85vh;
