@@ -8,7 +8,7 @@ description: Los productores que rediseñan hoy tienen ventaja competitiva de 3-
 /* Hero Section */
 .enfoque-hero {
   position: relative;
-  background: linear-gradient(rgba(30, 20, 12, 0.85), rgba(30, 20, 12, 0.85)),
+  background: linear-gradient(rgba(61, 40, 23, 0.65), rgba(61, 40, 23, 0.65)),
               url('{{ '/assets/images/enfoque-hero-cerdos-huerto.png' | relative_url }}');
   background-size: cover;
   background-position: center;
